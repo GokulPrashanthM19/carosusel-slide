@@ -45,6 +45,30 @@
     .slick-current {
       opacity: 1;
     }
+     
+    .slide-arrow{
+        position: absolute;
+        top: 50%;
+        margin-top: -15px;
+   }
+    .prev{
+      left: 32px;
+      height: 50px;
+      width: 40px;
+      background: url('./img/back.svg') no-repeat;
+      background-size: cover;
+      z-index: 99;
+    }
+    
+
+    .next{
+      right: 32px;
+      height: 50px;
+      width: 40px;
+      background: url('./img/next.svg') no-repeat;
+      background-size: cover;
+    }  
+    
   </style>
 </head>
 <body>
@@ -62,6 +86,8 @@
     <div>
       <img data-lazy="http://placehold.it/350x300?text=4-350w"  data-srcset="http://placehold.it/650x300?text=4-650w 650w, http://placehold.it/960x300?text=4-960w 960w" data-sizes="100vw">
     </div>
+</div>
+    
 
   </section>
 
@@ -73,7 +99,9 @@
       $(".lazy").slick({
         dots: true,
         infinite: true,
-        arrows:false,
+        arrows:true,
+         prevArrow: '<Img class="slide-arrow prev"></Img>',
+         nextArrow: '<Img class="slide-arrow next"></Img>',
         autoplay:true,
         autoplaySpeed:3000,
       });
