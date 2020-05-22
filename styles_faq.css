@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#F5F5F5;
+    
+}
+
+/*carosuel starts here*/
+.faq_carousel-header {
+        width: 100%;
+        height: auto;
+        background-color: #004F71;
+    
+    
+    }
+
+.faq_carousel-img {
+     width: 50%;
+        height: 223px; 
+        overflow: hidden;
+        float: left;
+    } 
+	
+	.faq_carosuel-text {
+		width: 50%;
+		height: 0px;
+		padding: 44px 50px;
+		/* margin-top: 50px; */
+		background-color: #004F71;
+		float:left;
+	}
+.faq_title {
+	    text-align: left;
+	    font-family: Brandon Grotesque;
+	    letter-spacing: 0px;
+	    color: #FFFFFF;
+	    text-shadow: 0px 3px 6px #004F71;
+	    text-transform: uppercase;
+	    opacity: 1;
+	    font-size: 45px;
+	    font-weight: bold;
+	    /* padding-bottom: 25px; */
+	}
+.faq_carosuel-text p {
+		color:#CFD9DE;
+		margin: 0;
+		font-family: calibri;
+		font-size: 22px;
+		font-weight: normal;
+		line-height: 28px;
+		margin-bottom: 19px;
+		margin-top: 9px;
+	}
+
+
+
+/*carosuel end*/
+
+.wrapper{
+    margin: 0px auto 0;
+}
+
+.wrapper .accordion_wrap {
+    box-shadow: 0px 3px 6px #FFFFFF;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.wrapper .accordion_wrap .accordion_header {
+    width: 100%;
+    background: #FFFFFF;
+    padding: 20px 20px 20px;
+    float:left;
+    padding-left: 28px;
+    color:#004F71;
+    font:Bold 28px/22px Calibri;
+    letter-spacing:0.28px;
+    text-transform:uppercase;
+    letter-spacing:0.84px;
+    opacity:1;
+    font-size: 24px;
+    position:relative;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+.wrapper .accordion_wrap .accordion_header:after{
+    content: "";
+    position: absolute;
+    overflow: auto;
+    float: right;
+    right: 35px;
+    width: 20px;
+    height: 27px;
+    transition: all 0.5s ease;
+    background: url('./images/accordion_next.png')no-repeat;
+    
+}
+
+
+.wrapper .accordion_wrap .accordion_header:hover {
+  background-color: #004F71;
+  color:#FFFFFF;
+}
+
+
+.wrapper .accordion_wrap .accordion_header:hover::after {
+  width: 20px;
+  height: 27px;
+  top: 19px;
+  right: 38px;
+  background-color: #FFFFFF;
+  background: url('./images/accordion_next_white.png')no-repeat;
+
+}
+
+.wrapper .accordion_wrap .accordion_body {
+    width: 100%;
+    height: 0px;
+    transition: all 0.5s ease;
+    background: #FFFFFF;
+    overflow: hidden;
+    
+}
+
+.wrapper .accordion_wrap .accordion_body .accordion_underline{
+     height: 1px;
+     margin-left: 27px;
+     margin-right: 29px;
+     background: #D5D4D2;
+     opacity: 1;
+
+}
+
+.wrapper .accordion_wrap .accordion_body p{
+    padding: 15px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #5A5C61;  
+}
+
+.wrapper .accordion_wrap:last-child .accordion_header.active {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: 2px soild #F5F5F5;
+}
+
+
+.wrapper .accordion_wrap .accordion_header.active:after {
+    transform: rotate(90deg);
+}
+
+.wrapper .accordion_wrap .accordion_header.active + .accordion_body{
+    height:auto;
+}
+
+
+
+/*child accordion css*/
+
+.child_wrapper{
+    
+}
+
+.wrapper .accordion_wrap .accordion_body .child_accordion_wrap {
+    
+    margin: 15px 30px 30px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+}
+
+.wrapper .accordion_wrap .accordion_body .child_accordion_wrap .child_accordion_header {
+    background: #F5F5F5;
+    padding: 17px;
+    color:#5A5C61;
+    font:Bold 28px/22px Calibri;
+    letter-spacing: 0.28px;
+    color: #5A5C61;
+    opacity: 1;
+    font-size: 22px;
+    position:relative;
+    text-align: left;
+    cursor: pointer;
+    
+}
+
+
+
+.wrapper .accordion_wrap .accordion_body .child_accordion_wrap:first-child .child_accordion_header{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    
+}
+
+.wrapper .accordion_wrap .accordion_body .child_accordion_wrap:last-child .child_accordion_header{
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    
+}
+
+.wrapper .accordion_wrap .accordion_body .child_accordion_wrap .child_accordion_header:before,
+.wrapper .accordion_wrap .accordion_body .child_accordion_wrap .child_accordion_header:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    width: 20px;
+    height: 2px;
+    background: #5A5C61;
+    
+}
+
+.wrapper .accordion_wrap .accordion_body .child_accordion_wrap .child_accordion_header:after {
+    transform: rotate(-90deg);
+    transition: all 0.5s ease;
+    
+}
+
+.wrapper .accordion_wrap .accordion_body .child_accordion_wrap .child_accordion_body {
+    width: 100%;
+    height: 0px;
+    transition: all 0.5s ease;
+    background: #F5F5F5;
+    overflow: hidden;
+    
+}
+
+.wrapper .accordion_wrap .accordion_body .child_accordion_wrap 
+.child_accordion_body .child_accordion_underline{
+     
+     height: 1px;
+     margin-left: 15px;
+     margin-right: 15px;
+     background: #00000029;
+     opacity: 1;
+
+}
+
+
+.wrapper .accordion_wrap .accordion_body .child_accordion_wrap .child_accordion_body p{
+    padding: 15px;
+    font-size: 15px;
+    line-height: 25px;
+    color: #63666A;
+    font-family: Calibri;
+    letter-spacing: 0.35px;
+    text-align: left;
+    opacity: 1;
+}
+
+.wrapper .accordion_wrap .accordion_body .child_accordion_wrap .child_accordion_body 
+.chid_accordion_body_head .chid_accordion_body_title{
+    padding: 10px 20px 0px;
+    text-align: left;
+    font: Bold 18px/27px Calibri;
+    letter-spacing: 0.22px;
+    color: #5A5C61;
+}
+
+.wrapper .accordion_wrap .accordion_body .child_accordion_wrap .child_accordion_body 
+.chid_accordion_body_head p{
+    padding: 0px 20px 15px;
+    font-size: 15px;
+    line-height: 25px;
+    color: #63666A;
+    font-family: Calibri;
+    letter-spacing: 0.35px;
+    text-align: left;
+    opacity: 1;
+}
+
+.wrapper .accordion_wrap .accordion_body .child_accordion_wrap .child_accordion_body
+.child_accordion_concur {
+    padding: 0px 15px 20px;
+    margin-top: -10px;
+    color: #004F71;
+    font: Bold 20px/32px Calibri;
+    letter-spacing: 0.35px;
+    text-align: left;
+    text-decoration: underline;
+    opacity: 1;
+    
+}
+
+.wrapper .accordion_wrap .accordion_body .child_accordion_wrap:last-child 
+.child_accordion_header.active {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: 2px soild #F5F5F5;
+}
+
+.wrapper .accordion_wrap .accordion_body .child_accordion_wrap 
+.child_accordion_header.active:before,
+.wrapper .accordion_wrap .accordion_body .child_wrapper 
+.child_accordion_wrap .child_accordion_header.active:after{
+    background: #5A5C61;
+}
+
+.wrapper .accordion_wrap .accordion_body .child_accordion_wrap 
+.child_accordion_header.active:after {
+    transform: rotate(0);
+}
+
+.wrapper .accordion_wrap .accordion_body .child_accordion_wrap 
+.child_accordion_header.active + .child_accordion_body{
+    height:auto;
+}
+
+
+
+.chid_accordion_body_main {
+            margin: 20px 15px;
+            width:250px;
+            height: 420px;
+            background: #FFFFFF;
+            padding: 0px 0px 32px;
+            border: 1px solid #000000;
+            float: left;
+    
+        }
+        .chid_accordion_body_main .child_body_head{
+            margin: 0px 17px;
+            padding: 27px 0px 11px;
+            border-bottom: 1px solid #00000029;
+            text-align: center;
+            font: Bold 19px/27px Calibri;
+            letter-spacing: 0.22px;
+            color: #0F2937;
+            text-transform: uppercase;
+            opacity: 1;
+            
+        }
+        
+        .chid_accordion_body_main .child_body_container {
+        }
+        
+        .chid_accordion_body_main .child_body_container .child_body_box{
+            padding: 10px 17px 0px;
+            
+        }
+        .chid_accordion_body_main .child_body_container .child_body_box .p1{
+            margin: 5px 0px 0px;
+            text-align: left;
+            font: Bold 15px/24px Calibri;
+            letter-spacing: 0.12px;
+            color: #005883;
+            opacity: 1;
+            
+        }
+        
+        .chid_accordion_body_main .child_body_container .child_body_box .p2 {
+            text-align: left;
+            font-family: Calibri;
+            font-size: 14px;
+            letter-spacing: 0px;
+            color: #2C2E35;
+            opacity: 1;
+        }
+        .chid_accordion_body_main .child_body_container .child_body_box .p3 {
+            padding: 4px 0px;
+            text-align: left;
+            font: Bold 14px/22px Calibri;
+            color: #2C2E35;
+            opacity: 1;
+            height: 52px;
+        }
+
+
+
+
+/*Mobile Styles*/
+
+@media only screen and (max-width:767px){
+    .faq_carousel-img {
+	    width: 100%;
+        height: auto;
+	}
+    .slick-slide img {
+	    height: 156px;
+	}
+    
+    .faq_carosuel-text {
+	    width: 100%;
+        height: auto;
+	    padding: 30px 10px;
+        margin-top: 0px;
+	}
+    .faq_carosuel-text p {
+	    font-size: 16px;
+        margin-bottom: 0px;
+	}
+    
+    .wrapper .accordion_wrap {
+        margin: 16px;
+    }
+    .wrapper .accordion_wrap .accordion_body .child_accordion_wrap {
+        margin: 0px 0px 30px;
+    }
+    .wrapper .accordion_wrap .accordion_header.active {
+    
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    
+    }
+    .chid_accordion_body_main {
+            margin: 0 auto 25px;
+            box-shadow: 0px 3px 6px #00000029;
+            border: 1px solid #D9D9D6;
+            width:100%;
+            height: auto; 
+    }
+    .chid_accordion_body_main .child_body_head{
+            margin: 0px 0px;
+            padding: 15px 0px 11px;
+    }
+    .chid_accordion_body_main .child_body_container .child_body_box .p1{
+            font: Bold 19px/36px Calibri;
+    }
+    .chid_accordion_body_main .child_body_container .child_body_box .p2 {
+            margin: 0px 0px 12px;
+            font-size: 19px;
+    }
+    .chid_accordion_body_main .child_body_container .child_body_box .p3 {
+            margin: 0px 0px 12px;
+            font: Bold 19px/34px Calibri;
+        
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
