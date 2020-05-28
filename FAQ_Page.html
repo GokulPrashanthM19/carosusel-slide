@@ -20,10 +20,170 @@
 					<div class="logo">
 						<span><img src="./Images/abbottLogo.png"></span>
 					</div>
-					<div class="countrySelect">
-						
-					</div>
+					
 					<div class="langSelect">
+						<div class="lang_select_wrap">
+                            <ul class="lang_default_option">
+                                <li>
+                                    <div class="lang_option">
+                                        <p class="lang_name">DEUTSCHE</p>
+                                        <div class="lang-down-arrow"></div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="lang_select_wrap1"> 
+                            <ul class="lang_select_ul">
+                                <li>
+                                     <div class="lang_option">
+                                        <p class="langName">Deutsche</p>
+                                         <div class="checkicon active"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="lang_option">
+                                        <p class="langName">English</p>
+                                        <div class="checkicon"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                        </div>
+					</div>
+                    
+                    <div class="countrySelect">
+                        <div class="select_wrap">
+                            <ul class="default_option">
+                                <li>
+                                    <div class="option us">
+                                        <p class="defaultcountryName">US</p>
+                                        <div class="icon"></div>
+                                        <div class="down-arrow"></div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        
+                        </div>
+                        <div class="select_wrap1"> 
+        
+                                    <ul class="select_ul">
+                                        <li>
+                                            <div class="option us">
+                                                <div class="icon"></div>
+                                                <p class="countryName">US</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="option albania">
+                                                <div class="icon"></div>
+                                                <p class="countryName">Albania</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="option argentina">
+                                                <div class="icon"></div>
+                                                <p class="countryName">Argentina</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="option australia">
+                                                <div class="icon"></div>
+                                                <p class="countryName">Australia</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="option austria">
+                                                <div class="icon"></div>
+                                                <p class="countryName">Austria</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="option belgium">
+                                                <div class="icon"></div>
+                                                <p class="countryName">Belgium</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="option brazil">
+                                                <div class="icon"></div>
+                                                <p class="countryName">Brazil</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="option bulgaria">
+                                                <div class="icon"></div>
+                                                <p class="countryName">Bulgaria</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="option chile">
+                                                <div class="icon"></div>
+                                                <p class="countryName">Chile</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="option china">
+                                                <div class="icon"></div>
+                                                <p class="countryName">China</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="option croatia">
+                                                <div class="icon"></div>
+                                                <p class="countryName">Croatia</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="option denmark">
+                                                <div class="icon"></div>
+                                                <p class="countryName">Denmark</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="option dominicanrepublic">
+                                                <div class="icon"></div>
+                                                <p class="countryName">Dominican Republic</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="option ecuador">
+                                                <div class="icon"></div>
+                                                <p class="countryName">Ecuador</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="option egypt">
+                                                <div class="icon"></div>
+                                                <p class="countryName">Egypt</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="option finland">
+                                                <div class="icon"></div>
+                                                <p class="countryName">Finland</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="option france">
+                                                <div class="icon"></div>
+                                                <p class="countryName">France</p>
+                                            </div>
+                                        </li>
+                                         <li>
+                                            <div class="option germany">
+                                                <div class="icon"></div>
+                                                <p class="countryName">Germany</p>
+                                            </div>
+                                        </li>
+
+                                    </ul>  
+                                </div>
+                        
 						
 					</div>
 					<div class="mobilehamburg">
@@ -386,11 +546,58 @@
 			</div>
 			
 		</div>
-		
-	</div>
+    </div>	
+	
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
   	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
+        
+        $(document).ready(function(){
+             $(".lang_select_ul li").click(function(){
+                 
+                 $(".checkicon").toggleClass("active");
+                 var lanName = $(this).find(".langName").text().toLowerCase();
+                 $(".lang_name").text(lanName);
+                 $(".lang_select_wrap1").removeClass("active");
+                 $(".lang-down-arrow").removeClass("active");
+                 
+                 
+                 
+             });
+            
+            $(".lang_default_option").click(function(){
+                $(".lang-down-arrow").toggleClass("active");
+                 
+                $(".lang_select_wrap1").toggleClass("active");
+                
+                 
+                 
+             });
+            
+            
+        })
+        
+        $(document).ready(function(){
+            
+            $(".default_option").click(function(){
+                $(this).parent().toggleClass("active");
+                $(".select_wrap1").toggleClass("active");
+                $(".down-arrow").toggleClass("active");
+                
+            })
+            $(".select_ul li").click(function(){
+                var currentCountry = $(this).html();
+                var text = document.querySelector('.select_ul li').innerHTML;
+                var id = $(this).find(".countryName").text().toLowerCase();
+                
+                $(".defaultcountryName").text(id);
+                $(".default_option li").removeClass();
+                $(".down-arrow").removeClass("active");
+                $(".default_option li").toggleClass("option "+id.replace(" ", ""));
+                $(this).parents(".select_wrap1").removeClass("active");
+                $(".default_option").parent().removeClass("active");
+            })
+        })
         $(document).on('ready', function() {
 		  
 		  $(".lazy").slick({

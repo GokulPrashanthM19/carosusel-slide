@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body{
@@ -437,6 +438,452 @@ body{
 
 
 
+/*country selection styles*/
+.countrySelect {
+    float: right;
+    background: #FFFFFF;
+    
+}
+
+.langSelect {
+    width:150px;
+    float: right;
+    background: #FFFFFF;
+    
+}
+
+
+
+.countrySelect .select_wrap{
+    padding:5px 20px;
+    background: #000000;
+}
+
+
+.langSelect .lang_select_wrap {
+    padding:5px 20px;
+    background: #000;
+    
+}
+
+.langSelect .lang_select_wrap1 {
+    width: 172px;
+    display: none;
+    z-index: 999999;
+    top:50px;
+    position: absolute;
+    right: 200px;
+    background: #FFF;
+
+}
+
+.langSelect .lang_select_wrap1.active {
+    
+    display: block;
+    
+
+}
+
+
+.lang_select_wrap .lang_default_option .lang_option .lang_name {
+    width: 73px;
+    position: relative;
+    top: 5px;
+    right:19px;
+    font: Bold 13px/23px Brandon Grotesque;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    
+}
+
+
+.lang_select_wrap .lang_default_option {
+    cursor: pointer;
+}
+
+.lang_select_wrap .lang_default_option .lang_option {
+    display: flex;
+}
+
+.lang_select_wrap1 .lang_select_ul .lang_option {
+    margin: 5px 0px 5px;
+    display: flex;
+}
+
+.lang_select_wrap1 .lang_select_ul .lang_option .langName {
+    width: 128px;
+    font-family: Calibri;
+    font-size: 15px;
+    letter-spacing: 0px;
+    padding: 10px 25px;
+    color: #004F71;
+    opacity: 1;
+    
+}
+
+.lang_select_wrap1 .lang_select_ul .lang_option .checkicon {
+     margin: 11px 0px -10px;
+     width:36px;
+     height:36px;
+     display: none;
+     background: url(./Images/checkLang.svg) no-repeat 0 0;
+}
+
+.lang_select_wrap1 .lang_select_ul .lang_option .checkicon.active {
+     display: block;
+}
+
+.lang_select_wrap1 .lang_select_ul li {
+    
+     cursor: pointer;
+}
+
+
+.countrySelect .select_wrap1 {
+    width: 250px;
+    display: none;
+    z-index: 999999;
+    position: absolute;
+    top:50px;
+    right: 320px;
+    background: #FFF;
+
+}
+
+.select_wrap .default_option {
+    cursor: pointer;
+    
+}
+
+.select_wrap .default_option .option {
+    display: flex;
+}
+
+.select_wrap .default_option .option .defaultcountryName {
+    margin: 7px 20px;
+    font: Bold 13px/20px Brandon Grotesque;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+
+}
+
+ .down-arrow {
+    position: relative;
+     margin: 0px;
+    top: 8px;
+    width: 16px;
+    height: 16px;
+    background: url('./Images/down-arrow.png') no-repeat 0 0;
+    transform: rotate(180deg);
+}
+
+.lang-down-arrow {
+    position: relative;
+    margin: 0px;
+    top: 8px;
+    width: 16px;
+    height: 16px;
+    background: url('./Images/down-arrow.png') no-repeat 0 0;
+    transform: rotate(180deg);
+}
+
+.lang-down-arrow.active {
+    transform: rotate(0deg);
+}
+
+.select_wrap .default_option .option  .icon {
+    background: url(./Images/Countryflages/worldFlag0.svg) no-repeat 0 0;
+    width:32px;
+    height: 32px;
+    position: relative;
+    top: 8px;
+    right: 6px;
+    
+}
+
+
+
+.select_wrap1 .select_ul .option .countryName {
+    margin: 2px 10px;
+    font-family: Calibri;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #63666A;
+    opacity: 1;
+}
+
+.select_wrap1 .select_ul {
+    
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    background: #fff;
+     box-shadow: 0px 6px 15px #00000080;
+}
+
+.select_wrap1 .select_ul li {
+    padding: 10px 20px;
+    cursor: pointer;
+    
+}
+
+.select_wrap1 .select_ul li:hover {
+    background: #ffff4dd;
+}
+
+.select_wrap1 .select_ul li:last-child:hover {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;   
+}
+
+.select_wrap1 .option {
+    display: flex;
+}
+
+.select_wrap .option  .icon {
+    background: url(./Images/Countryflages/worldFlag0.svg) no-repeat 0 0;
+    width:32px;
+    height: 32px;
+
+}
+
+
+
+
+.select_wrap1 .option.us .icon {
+    background: url(./Images/Countryflages/worldFlag0.svg) no-repeat 0 0;
+    width:32px;
+}
+
+
+.select_wrap .option.albania  .icon {
+    background: url(./Images/Countryflages/worldFlag1.svg) no-repeat 0 0;
+    width:32px;
+    height: 32px;
+
+}
+
+.select_wrap1 .option.albania .icon {
+    background: url(./Images/Countryflages/worldFlag1.svg) no-repeat 0 0;
+    width:32px;
+}
+
+.select_wrap .option.argentina .icon {
+    background: url(./Images/Countryflages/worldFlag2.svg) no-repeat 0 0;
+    width:32px;
+    height: 32px;
+}
+
+.select_wrap1 .option.argentina .icon {
+    background: url(./Images/Countryflages/worldFlag2.svg) no-repeat 0 0;
+    width:32px;
+}
+
+.select_wrap .option.australia .icon {
+    background: url(./Images/Countryflages/worldFlag3.svg) no-repeat 0 0;
+    width:32px;
+    height: 32px;
+}
+
+.select_wrap1 .option.australia .icon {
+    background: url(./Images/Countryflages/worldFlag3.svg) no-repeat 0 0;
+    width:32px;
+}
+
+.select_wrap .option.austria .icon {
+    background: url(./Images/Countryflages/worldFlag4.svg) no-repeat 0 0;
+    width:32px;
+    height: 32px;
+}
+
+.select_wrap1 .option.austria .icon {
+    background: url(./Images/Countryflages/worldFlag4.svg) no-repeat 0 0;
+    width:32px;
+}
+
+.select_wrap .option.belgium .icon {
+    background: url(./Images/Countryflages/worldFlag5.svg) no-repeat 0 0;
+    width:32px;
+    height: 32px;
+}
+
+.select_wrap1 .option.belgium .icon {
+    background: url(./Images/Countryflages/worldFlag5.svg) no-repeat 0 0;
+    width:32px;
+}
+
+.select_wrap .option.brazil .icon {
+    background: url(./Images/Countryflages/worldFlag6.svg) no-repeat 0 0;
+    width:32px;
+    height: 32px;
+}
+
+.select_wrap1 .option.brazil .icon {
+    background: url(./Images/Countryflages/worldFlag6.svg) no-repeat 0 0;
+    width:32px;
+}
+
+
+.select_wrap .option.bulgaria .icon {
+    background: url(./Images/Countryflages/worldFlag7.svg) no-repeat 0 0;
+    width:32px;
+    height: 32px;
+}
+
+.select_wrap1 .option.bulgaria .icon {
+    background: url(./Images/Countryflages/worldFlag7.svg) no-repeat 0 0;
+    width:32px;
+}
+
+.select_wrap .option.chile .icon {
+    background: url(./Images/Countryflages/worldFlag8.svg) no-repeat 0 0;
+    width:32px;
+    height: 32px;
+}
+
+.select_wrap1 .option.chile .icon {
+    background: url(./Images/Countryflages/worldFlag8.svg) no-repeat 0 0;
+    width:32px;
+}
+
+.select_wrap .option.china .icon {
+    background: url(./Images/Countryflages/worldFlag9.svg) no-repeat 0 0;
+    width:32px;
+    height: 32px;
+}
+
+.select_wrap1 .option.china .icon {
+    background: url(./Images/Countryflages/worldFlag9.svg) no-repeat 0 0;
+    width:32px;
+}
+
+.select_wrap .option.croatia .icon {
+    background: url(./Images/Countryflages/worldFlag10.svg) no-repeat 0 0;
+    width:32px;
+    height: 32px;
+}
+
+.select_wrap1 .option.croatia .icon {
+    background: url(./Images/Countryflages/worldFlag10.svg) no-repeat 0 0;
+    width:32px;
+}
+
+.select_wrap .option.denmark .icon {
+    background: url(./Images/Countryflages/worldFlag11.svg) no-repeat 0 0;
+    width:32px;
+    height: 32px;
+}
+
+.select_wrap1 .option.denmark .icon {
+    background: url(./Images/Countryflages/worldFlag11.svg) no-repeat 0 0;
+    width:32px;
+}
+
+.select_wrap .option.dominicanrepublic .icon {
+    background: url(./Images/Countryflages/worldFlag12.svg) no-repeat 0 0;
+    width:32px;
+    height: 32px;
+}
+
+.select_wrap1 .option.dominicanrepublic .icon {
+    background: url(./Images/Countryflages/worldFlag12.svg) no-repeat 0 0;
+    width:32px;
+}
+
+.select_wrap .option.ecuador .icon {
+    background: url(./Images/Countryflages/worldFlag13.svg) no-repeat 0 0;
+    width:32px;
+    height: 32px;
+}
+
+.select_wrap1 .option.ecuador .icon {
+    background: url(./Images/Countryflages/worldFlag13.svg) no-repeat 0 0;
+    width:32px;
+}
+
+.select_wrap .option.egypt .icon {
+    background: url(./Images/Countryflages/worldFlag14.svg) no-repeat 0 0;
+    width:32px;
+    height: 32px;
+}
+
+.select_wrap1 .option.egypt .icon {
+    background: url(./Images/Countryflages/worldFlag14.svg) no-repeat 0 0;
+    width:32px;
+}
+
+.select_wrap .option.finland .icon {
+    background: url(./Images/Countryflages/worldFlag15.svg) no-repeat 0 0;
+    width:32px;
+    height: 32px;
+}
+
+.select_wrap1 .option.finland .icon {
+    background: url(./Images/Countryflages/worldFlag15.svg) no-repeat 0 0;
+    width:32px;
+}
+
+.select_wrap .option.france .icon {
+    background: url(./Images/Countryflages/worldFlag16.svg) no-repeat 0 0;
+    width:32px;
+    height: 32px;
+}
+
+.select_wrap1 .option.france .icon {
+    background: url(./Images/Countryflages/worldFlag16.svg) no-repeat 0 0;
+    width:32px;
+}
+.select_wrap .option.germany .icon {
+    background: url(./Images/Countryflages/worldFlag17.svg) no-repeat 0 0;
+    width:32px;
+    height: 32px;
+}
+
+.select_wrap1 .option.germany .icon {
+    background: url(./Images/Countryflages/worldFlag17.svg) no-repeat 0 0;
+    width:32px;
+}
+
+.select_wrap1.active {
+    display: block;
+}
+
+
+.select_wrap .default_option .option .down-arrow.active {
+    
+   transform: rotate(0deg);
+}
+
+@media only screen and (max-width:767px){
+    
+    
+    .langSelect {
+        width:70px;
+    
+    }
+    
+    .countrySelect .select_wrap {
+        padding: 5px 28px;
+    }
+    
+    .langSelect .lang_select_wrap1 {
+       right:0px; 
+    }
+    
+    .countrySelect .select_wrap1 {
+        right: 120px;
+    }
+    
+    .select_wrap .default_option .option .defaultcountryName {
+        display: none;
+
+    }
+    
+}
 
 
 
