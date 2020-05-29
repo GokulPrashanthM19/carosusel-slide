@@ -37,7 +37,7 @@
                             <ul class="lang_select_ul">
                                 <li>
                                      <div class="lang_option">
-                                        <p class="langName">Deutsche</p>
+                                        <p class="langName active">Deutsche</p>
                                          <div class="checkicon active"></div>
                                     </div>
                                 </li>
@@ -556,22 +556,18 @@
              $(".lang_select_ul li").click(function(){
                  
                  $(".checkicon").toggleClass("active");
+                 $(".langName").toggleClass("active");
                  var lanName = $(this).find(".langName").text().toLowerCase();
                  $(".lang_name").text(lanName);
                  $(".lang_select_wrap1").removeClass("active");
                  $(".lang-down-arrow").removeClass("active");
-                 
-                 
-                 
+              
              });
             
             $(".lang_default_option").click(function(){
                 $(".lang-down-arrow").toggleClass("active");
-                 
                 $(".lang_select_wrap1").toggleClass("active");
                 
-                 
-                 
              });
             
             

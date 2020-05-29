@@ -474,6 +474,7 @@ body{
     position: absolute;
     right: 200px;
     background: #FFF;
+    box-shadow: 0px 6px 15px #00000080;
 
 }
 
@@ -507,8 +508,10 @@ body{
 }
 
 .lang_select_wrap1 .lang_select_ul .lang_option {
-    margin: 5px 0px 5px;
     display: flex;
+    padding:6px;
+    border: 1px solid #D9D9D6;
+    
 }
 
 .lang_select_wrap1 .lang_select_ul .lang_option .langName {
@@ -517,9 +520,13 @@ body{
     font-size: 15px;
     letter-spacing: 0px;
     padding: 10px 25px;
-    color: #004F71;
+    color: #63666A;
     opacity: 1;
     
+}
+
+.lang_select_wrap1 .lang_select_ul .lang_option .langName.active {
+    color: #004F71;
 }
 
 .lang_select_wrap1 .lang_select_ul .lang_option .checkicon {
